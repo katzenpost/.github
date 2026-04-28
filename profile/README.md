@@ -20,7 +20,16 @@ against global passive adversaries.
   - **Client daemon** (`kpclientd`): mixnet client used by
     applications, including to reach Pigeonhole couriers.
 - **[hpqc](https://github.com/katzenpost/hpqc)** —
-  hybrid post-quantum cryptography library: KEM, NIKE, signatures.
+  hybrid post-quantum cryptography library. Provides KEM, NIKE,
+  and signature schemes behind clean interfaces, plus the pieces
+  that make them composable:
+  - a **KEM combiner** that is provably IND-CCA2 in the QROM,
+    based on the [KEM Combiners paper](https://eprint.iacr.org/2018/024)
+  - a **NIKE-to-KEM adapter** (an ad-hoc ElGamal construction)
+    so any NIKE can be used as a KEM, and combined with other
+    KEMs via the combiner
+  - a **signature scheme combiner**
+  - **BACAP**, a blinding-and-capability scheme used by Pigeonhole
 
 ### Clients
 
