@@ -90,20 +90,12 @@ Live dependencies of `hpqc` and the mixnet wire protocol:
 - **[sphincsplus](https://github.com/katzenpost/sphincsplus)**:
   fork of the SPHINCS+ reference code.
 
-Older standalone crypto, likely superseded by `hpqc`/`circl`
-(see Housekeeping):
+Standalone crypto:
 
-- **[mceliece](https://github.com/katzenpost/mceliece)**:
-  standalone Go Classic McEliece KEM.
 - **[sntrup4591761](https://github.com/katzenpost/sntrup4591761)**:
-  Go Streamlined NTRU Prime 4591^761.
-- **[chacha20](https://github.com/katzenpost/chacha20)** /
-  **[chacha20poly1305](https://github.com/katzenpost/chacha20poly1305)**:
-  forks of Yawning Angel's ChaCha20 primitives.
+  Go Streamlined NTRU Prime 4591^761. Used by hpqc.
 - **[NoiseFramework](https://github.com/katzenpost/NoiseFramework)**:
-  fork of the Python Noise Protocol Framework.
-- **[quic-go](https://github.com/katzenpost/quic-go)**: fork of
-  quic-go.
+  fork of the Python Noise Protocol Framework. Not yet used.
 
 ### Research, formal methods and analysis
 
@@ -150,10 +142,8 @@ Older standalone crypto, likely superseded by `hpqc`/`circl`
 
 ## Housekeeping
 
-These repositories are dormant or superseded. They are listed here
-explicitly so the catalogue stays honest and so the cruft can be
-retired deliberately. **Nothing here should be deleted without a
-maintainer's confirmation.**
+These repositories are dormant or superseded or obsolete.
+We should think about deleting them.
 
 ### Already archived (read-only)
 
@@ -169,8 +159,10 @@ maintainer's confirmation.**
   **[nixpkgs](https://github.com/katzenpost/nixpkgs)**: abandoned
   Nix deployment configuration (last touched 2018).
 
-### Candidates for archival (confirm, then archive)
+### Candidates for archival or deletion
 
+- **[quic-go](https://github.com/katzenpost/quic-go)**: fork of
+  quic-go.
 - **[katzen.chat](https://github.com/katzenpost/katzen.chat)**:
   website for the retired `katzen` app; obsolete with `katzen`.
 - **[fdroiddata](https://github.com/katzenpost/fdroiddata)**: stale
@@ -184,7 +176,7 @@ maintainer's confirmation.**
   standalone crypto that `hpqc`/`circl` appear to have superseded;
   verify no remaining dependants before archiving.
 - **[qrterminal](https://github.com/katzenpost/qrterminal)**: fork
-  with no apparent current consumer.
+  with no current consumer.
 
 ---
 
