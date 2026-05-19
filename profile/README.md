@@ -74,26 +74,28 @@ find the right place quickly and so dead wood is plainly labelled.
 
 ### Cryptography libraries and vendored crypto
 
-Live dependencies of `hpqc` and the mixnet wire protocol:
+Live dependencies of `hpqc`:
 
 - **[circl](https://github.com/katzenpost/circl)**: fork of
   Cloudflare's CIRCL, carried for use with `hpqc`.
+- **[falcon](https://github.com/katzenpost/falcon)**: Go bindings
+  for the Falcon padded post-quantum signature (C vendored from
+  PQClean).
+- **[sphincsplus](https://github.com/katzenpost/sphincsplus)**:
+  fork of the SPHINCS+ reference code.
+- **[sntrup4591761](https://github.com/katzenpost/sntrup4591761)**:
+  Go Streamlined NTRU Prime 4591^761.
+
+Live dependencies of `katzepost':
+
 - **[nyquist](https://github.com/katzenpost/nyquist)**: fork of
   Yawning Angel's Nyquist Noise library, from the `pqnoise` branch;
   supplies the PQ Noise wire protocol.
 - **[trunnel](https://github.com/katzenpost/trunnel)**: actively
   maintained Go port of Tor's trunnel binary-serialisation code
   generator; used for Sphinx and Pigeonhole wire types.
-- **[falcon](https://github.com/katzenpost/falcon)**: Go bindings
-  for the Falcon padded post-quantum signature (C vendored from
-  PQClean).
-- **[sphincsplus](https://github.com/katzenpost/sphincsplus)**:
-  fork of the SPHINCS+ reference code.
 
 Standalone crypto:
-
-- **[sntrup4591761](https://github.com/katzenpost/sntrup4591761)**:
-  Go Streamlined NTRU Prime 4591^761. Used by hpqc.
 - **[NoiseFramework](https://github.com/katzenpost/NoiseFramework)**:
   fork of the Python Noise Protocol Framework. Not yet used.
 
@@ -170,7 +172,6 @@ We should think about deleting them.
 - **[bfg](https://github.com/katzenpost/bfg)**: unlabelled Rust
   experiment, no README, untouched since 2024; purpose unclear.
 - **[mceliece](https://github.com/katzenpost/mceliece)**,
-  **[sntrup4591761](https://github.com/katzenpost/sntrup4591761)**,
   **[chacha20](https://github.com/katzenpost/chacha20)**,
   **[chacha20poly1305](https://github.com/katzenpost/chacha20poly1305)**:
   standalone crypto that `hpqc`/`circl` appear to have superseded;
