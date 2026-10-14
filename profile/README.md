@@ -3,10 +3,16 @@
 A post-quantum mix network providing strong metadata privacy
 against global passive adversaries.
 
+💬 **Come chat with us on Zulip: [katzenpost.zulipchat.com](https://katzenpost.zulipchat.com/)**
+
+Zulip is where the Katzenpost developers talk every day. Drop in to say
+hi, ask a question about the code or the research, get help running a
+node, or tell us what you're building. No phone number is needed to sign
+up, and it works well over Tor.
+
 📄 [Paper](https://arxiv.org/abs/2501.02933) ·
 🌐 [Website](https://katzenpost.network) ·
-📚 [Docs](https://katzenpost.network/docs/) ·
-💬 [Community](https://katzenpost.network/pages/community/)
+📚 [Docs](https://katzenpost.network/docs/)
 
 ---
 
@@ -39,6 +45,11 @@ against global passive adversaries.
   build with `make kpclientd` from the repo root. Required by katzenqt.
 - **[katzenqt](https://github.com/katzenpost/katzenqt)** —
   Qt group chat client. Talks to `kpclientd`.
+- **[jam](https://github.com/katzenpost/jam)** — terminal group chat
+  written in Lean that speaks katzenqt's group chat protocol, so jam and
+  katzenqt users can share a group. Talks to `kpclientd`.
+- **[glint](https://github.com/katzenpost/glint)** — desktop group chat
+  in Lean, built on Paw and CryptWalker. Just started.
 
 ### Thin clients
 
@@ -46,7 +57,11 @@ Language bindings for building applications that talk to `kpclientd`:
 
 - **Go** — in the monorepo at
   [`client2/thin`](https://github.com/katzenpost/katzenpost/tree/main/client2/thin)
-- **Rust and Python** — [thin_client](https://github.com/katzenpost/thin_client)
+- **Rust and Python** — [thin_client](https://github.com/katzenpost/thin_client),
+  which also ships `pigeonhole-cp` for sending files over Pigeonhole
+  channels. A Lean thin client is in progress in the same repository.
+- **[pigeonhole](https://github.com/katzenpost/pigeonhole)** — a
+  high-level Pigeonhole protocol library. Just started.
 
 ### Project
 
@@ -57,6 +72,7 @@ Language bindings for building applications that talk to `kpclientd`:
 
 ## New here?
 
+- **Say hi**: [Zulip chat](https://katzenpost.zulipchat.com/) — questions welcome
 - **Use it**: build [katzenqt](https://github.com/katzenpost/katzenqt)
   and `kpclientd` (see Clients above) — pre-built packages coming
 - **Run a node**: [Admin Guide](https://katzenpost.network/docs/admin_guide/)
@@ -86,7 +102,7 @@ Live dependencies of `hpqc`:
 - **[sntrup4591761](https://github.com/katzenpost/sntrup4591761)**:
   Go Streamlined NTRU Prime 4591^761.
 
-Live dependencies of `katzepost':
+Live dependencies of `katzenpost`:
 
 - **[nyquist](https://github.com/katzenpost/nyquist)**: fork of
   Yawning Angel's Nyquist Noise library, from the `pqnoise` branch;
@@ -96,6 +112,11 @@ Live dependencies of `katzepost':
   generator; used for Sphinx and Pigeonhole wire types.
 
 Standalone crypto:
+
+- **[sqisign](https://github.com/katzenpost/sqisign)**: pure-Rust
+  port of the SQIsign Round 2 (level 1) isogeny-based post-quantum
+  signature, checked against the C reference with differential
+  vectors and NIST KATs. Alpha.
 - **[NoiseFramework](https://github.com/katzenpost/NoiseFramework)**:
   fork of the Python Noise Protocol Framework. Not yet used.
 
@@ -106,9 +127,6 @@ Standalone crypto:
 - **[formal_specifications](https://github.com/katzenpost/formal_specifications)**:
   ProVerif/Noise models for BACAP, client2, MKEM, Sphinx and the
   Noise handshakes.
-- **[CryptWalker](https://github.com/katzenpost/CryptWalker)**: a
-  Lean cryptography library for prototyping protocols and proving
-  properties about them.
 - **[lean-ffi](https://github.com/katzenpost/lean-ffi)**: Lean FFI
   examples (to Rust and C), supporting the Lean modelling work.
 - **[reunion](https://github.com/katzenpost/reunion)**: the REUNION
@@ -119,6 +137,42 @@ Standalone crypto:
   Talek PIR private publish/subscribe system, kept for reference.
 - **[echo](https://github.com/katzenpost/echo)**: small Rust example
   service built on the `thin_client` library.
+
+### Lean libraries and tools
+
+Verified protocol code and the libraries Lean applications such as jam
+and glint are built from:
+
+- **[CryptWalker](https://github.com/katzenpost/CryptWalker)**: a
+  Lean cryptography library for prototyping protocols and proving
+  properties about them, including the group chat member state
+  machine shared with katzenqt.
+- **[uproar](https://github.com/katzenpost/uproar)**: Noise and PQ
+  Noise in Lean, with correctness proofs.
+- **[huh](https://github.com/katzenpost/huh)**: a secure remote shell
+  over PQ Noise, in Lean.
+- **[cborg](https://github.com/katzenpost/cborg)**: CBOR
+  serialisation for Lean, ported from Haskell's cborg; the CBOR layer
+  of the Lean thin client.
+- **[Tessera](https://github.com/katzenpost/Tessera)**: terminal user
+  interfaces in Lean, Brick-style widgets with the Elm architecture.
+- **[paw](https://github.com/katzenpost/paw)**: an Elm-style desktop
+  GUI library for Lean, with security rules stated in its types.
+- **[Logger](https://github.com/katzenpost/Logger)**: levelled,
+  per-module logging for Lean programs.
+- **[crossterm-lean-ffi](https://github.com/katzenpost/crossterm-lean-ffi)**:
+  terminal control for Lean from the Rust crate crossterm.
+- **[lean_unix_socket](https://github.com/katzenpost/lean_unix_socket)**:
+  Unix domain sockets for Lean, used to reach `kpclientd`.
+- **[lean-sys](https://github.com/katzenpost/lean-sys)**: fork of the
+  Rust bindings to Lean's C API, used by the Rust-backed libraries
+  above.
+
+### Application support
+
+- **[Rustic_Audio_PyO3](https://github.com/katzenpost/Rustic_Audio_PyO3)**:
+  Rust audio recording, DSP and Opus encoding with Python bindings;
+  powers push-to-talk voice messages in katzenqt.
 
 ### Operations and visualisation
 
