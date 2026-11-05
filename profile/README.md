@@ -18,7 +18,7 @@ software, so expect rough edges.
 
 ## Chat
 
-- **[hushphone](https://github.com/katzenpost/hushphone)**: group chat with push-to-talk voice over the mixnet and Reticulum meshes, Linux and Android
+- **[hushphone](https://github.com/katzenpost/hushphone)**: group chat with push-to-talk voice over the Katzenpost mixnet (Linux and Android) or a Reticulum mesh (Linux)
 - **[katzenqt](https://github.com/katzenpost/katzenqt)**: Qt desktop group chat
 - **[jam](https://github.com/katzenpost/jam)** and **[frank_chat](https://github.com/katzenpost/frank_chat)**: terminal and desktop group chat in Lean
 - **[katzenrns](https://github.com/katzenpost/katzenrns)**: group chat on a Reticulum mesh
