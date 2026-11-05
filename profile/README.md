@@ -12,7 +12,7 @@ software, so expect rough edges.
 📄 [Paper](https://arxiv.org/abs/2501.02933) ·
 🌐 [Website](https://katzenpost.network) ·
 📚 [Docs](https://katzenpost.network/docs/) ·
-💬 [Community](https://katzenpost.network/pages/community/)
+💬 [Zulip chat](https://katzenpost.zulipchat.com/)
 
 ## Chat
 
