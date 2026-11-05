@@ -2,8 +2,10 @@
 
 **Katzenpost** is a free software, post-quantum mix network. End-to-end encryption hides what you
 say; a mix network also hides who you talk to, when and how much, even from an adversary who can
-watch the whole internet. On top of it, **Pigeonhole** gives apps encrypted, unlinkable storage,
-and our group chat apps are built on that: no accounts, no chat servers.
+watch the whole internet. On top of it, **Pigeonhole** gives apps asynchronous, unlinkable
+communication, so people can chat without being online at the same time: messages wait on
+replicas for about a week, then are garbage-collected. Our group chat apps are built on it, with
+no accounts and no chat servers.
 
 You can try it on **namenlos**, our public mixnet, and on [Reticulum](https://reticulum.network)
 meshes, which share groups with the mixnet through a bridge replica. It is early, pre-alpha
