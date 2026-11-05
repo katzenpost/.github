@@ -15,7 +15,7 @@ software, so expect rough edges.
 🌐 [Website](https://katzenpost.network) ·
 📚 [Docs](https://katzenpost.network/docs/) ·
 💬 [Zulip chat](https://katzenpost.zulipchat.com/) ·
-📡 [namenlos status](https://status.namenlos.network/)
+📡 [namenlos mixnet status](https://status.namenlos.network/)
 
 ## Chat
 
