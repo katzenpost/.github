@@ -36,6 +36,29 @@ software, so expect rough edges.
 - **[cryptlib](https://github.com/katzenpost/cryptlib)**: Lean cryptography for modelling and proving protocols
 - **[kno](https://github.com/katzenpost/kno)**: build, install and check a Katzenpost network
 
+<table><tr><td valign="top" width="50%">
+
+### Latest releases
+<!-- releases starts -->
+- [hushphone v0.3.4](https://github.com/katzenpost/hushphone/releases/tag/v0.3.4) - 2026-11-15
+- [hpqc v0.0.96](https://github.com/katzenpost/hpqc/releases/tag/v0.0.96) - 2026-11-15
+- [katzenpost v0.0.111](https://github.com/katzenpost/katzenpost/releases/tag/v0.0.111) - 2026-11-14
+- [cryptlib v0.2.0](https://github.com/katzenpost/cryptlib/releases/tag/v0.2.0) - 2026-10-26
+<!-- releases ends -->
+
+</td><td valign="top" width="50%">
+
+### Blog posts
+<!-- blog starts -->
+- [Introduction to Pigeonhole Protocol](https://katzenpost.network/blog/2026/11/05/introduction-to-pigeonhole-protocol/) - 2026-11-05
+- [Formalizing Sphinx in Lean](https://katzenpost.network/blog/2026/10/31/formalizing-sphinx-in-lean/) - 2026-10-31
+- [Katzenpost threat model document](https://katzenpost.network/blog/2024/04/25/katzenpost-threat-model-document/) - 2024-04-25
+- [Mixnet Literature Overview](https://katzenpost.network/blog/2024/04/15/mixnet-literature-overview/) - 2024-04-15
+- [hpqc - hybrid post quantum cryptography library](https://katzenpost.network/blog/2024/04/12/hpqc-hybrid-post-quantum-cryptography-library/) - 2024-04-12
+<!-- blog ends -->
+
+</td></tr></table>
+
 New here? Read [Understanding Pigeonhole](https://katzenpost.network/docs/pigeonhole_explained/),
 [run a node](https://katzenpost.network/docs/admin_guide/), or browse
 [all repositories](https://github.com/orgs/katzenpost/repositories).
