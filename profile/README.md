@@ -40,7 +40,7 @@ software, so expect rough edges.
 
 ### Latest releases
 <!-- releases starts -->
-- [hushphone v0.3.5](https://github.com/katzenpost/hushphone/releases/tag/v0.3.5) - 2026-11-18
+- [hushphone v0.3.7](https://github.com/katzenpost/hushphone/releases/tag/v0.3.7) - 2026-11-20
 - [hpqc v0.0.96](https://github.com/katzenpost/hpqc/releases/tag/v0.0.96) - 2026-11-15
 - [katzenpost v0.0.111](https://github.com/katzenpost/katzenpost/releases/tag/v0.0.111) - 2026-11-14
 - [cryptlib v0.2.0](https://github.com/katzenpost/cryptlib/releases/tag/v0.2.0) - 2026-10-26
